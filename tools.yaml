@@ -27,66 +27,28 @@ tools:
   postgres-execute-sql:
     kind: postgres-sql
     source: campaign-postgres
-    description: "Execute SQL queries against Postgres operational campaign data. Available tables: campaigns, creatives, campaign_status. Use for current status, configurations, and operational lookups. The tool accepts a 'sql' parameter (required) with the SQL statement to execute."
+    statement: "{{.sql}}"
+    description: "Execute SQL queries against Postgres operational campaign data. Available tables: campaigns, creatives, campaign_status. Use for current status, configurations, and operational lookups."
+    templateParameters:
+      - name: sql
+        type: string
+        description: "The SQL statement to execute against Postgres. Use for operational queries like campaign status, creative approvals, current configurations."
 
   # BigQuery schema discovery - list tables
   bigquery-list-table-ids:
     kind: bigquery-list-table-ids
     source: campaign-bigquery
     description: "List all tables in BigQuery datasets. Use this to discover available tables before querying. Returns table names, dataset names, and basic metadata."
-    parameters:
-      - name: dataset
-        type: string
-        description: "Dataset name to filter tables. Lists tables in the specified dataset."
-        required: true
 
   # BigQuery schema discovery - get table info
   bigquery-get-table-info:
     kind: bigquery-get-table-info
     source: campaign-bigquery
     description: "Get detailed schema information for a BigQuery table including column names, data types, descriptions, and constraints. Use this to understand table structure before writing queries."
-    parameters:
-      - name: dataset
-        type: string
-        description: "Dataset name containing the table"
-        required: true
-      - name: table
-        type: string
-        description: "Table name to describe"
-        required: true
 
   # Postgres schema discovery - list tables
   postgres-list-tables:
     kind: postgres-list-tables
     source: campaign-postgres
     description: "List all tables in the Postgres database. Use this to discover available tables before querying. Returns table names and schema information."
-    parameters:
-      - name: schema
-        type: string
-        description: "Optional: Schema name to filter tables (default: 'public'). If not provided, lists tables in the public schema."
-        required: false
-
-  # Postgres schema discovery - describe table schema
-  postgres-describe-table:
-    kind: postgres-describe-table
-    source: campaign-postgres
-    description: "Get detailed schema information for a Postgres table including column names, data types, constraints, primary keys, and foreign keys. Use this to understand table structure before writing queries."
-    parameters:
-      - name: table
-        type: string
-        description: "Table name to describe"
-        required: true
-      - name: schema
-        type: string
-        description: "Optional: Schema name (default: 'public')"
-        required: false
-
-toolsets:
-  campaign-analytics:
-    - bigquery-execute-sql
-    - postgres-execute-sql
-    - bigquery-list-table-ids
-    - bigquery-get-table-info
-    - postgres-list-tables
-    - postgres-describe-table
-
+  

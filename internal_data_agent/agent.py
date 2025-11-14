@@ -9,7 +9,7 @@ import os
 
 # genai-toolbox server URL (default: http://127.0.0.1:5000)
 # Can be overridden via TOOLBOX_SERVER_URL environment variable
-TOOLBOX_SERVER_URL = os.getenv("TOOLBOX_SERVER_URL", "http://127.0.0.1:5000")
+TOOLBOX_SERVER_URL = os.getenv("TOOLBOX_SERVER_URL", "http://127.0.0.1:5000/mcp")
 
 # Determine connection type based on environment
 # For local development with stdio, use StdioConnectionParams

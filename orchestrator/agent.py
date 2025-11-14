@@ -7,29 +7,27 @@ from internal_data_agent.agent import internal_data_agent
 # Create AgentTools to expose sub-agents as tools to the orchestrator
 social_insights_tool = AgentTool(
     agent=social_media_agent,
-    name="social_insights",
-    description="""Get Thai social media trends and sentiment for a topic.
-Use this when questions involve:
-- What's trending on social media?
-- What's the sentiment on [topic]?
-- What are people talking about regarding [topic]?
-- Market trends, viral content, social conversations
-Returns: Topics array, overall sentiment, platform info, recency notes.
-"""
+#     description="""Get Thai social media trends and sentiment for a topic.
+# Use this when questions involve:
+# - What's trending on social media?
+# - What's the sentiment on [topic]?
+# - What are people talking about regarding [topic]?
+# - Market trends, viral content, social conversations
+# Returns: Topics array, overall sentiment, platform info, recency notes.
+# """
 )
 
 internal_insights_tool = AgentTool(
     agent=internal_data_agent,
-    name="internal_insights",
-    description="""Query internal campaign performance and metrics from BigQuery.
-Use this when questions involve:
-- Campaign performance, ROAS, CTR, conversions
-- Historical campaign data
-- Specific campaign metrics or comparisons
-- Performance by audience segment or platform
-- Which campaigns/creatives performed best/worst
-Returns: Campaign summaries, performance insights, metrics breakdowns.
-"""
+#     description="""Query internal campaign performance and metrics from BigQuery.
+# Use this when questions involve:
+# - Campaign performance, ROAS, CTR, conversions
+# - Historical campaign data
+# - Specific campaign metrics or comparisons
+# - Performance by audience segment or platform
+# - Which campaigns/creatives performed best/worst
+# Returns: Campaign summaries, performance insights, metrics breakdowns.
+# """
 )
 
 
