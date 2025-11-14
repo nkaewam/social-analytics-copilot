@@ -1,11 +1,27 @@
 from google.adk.agents.llm_agent import Agent
 from google.adk.tools import google_search
 
-root_agent = Agent(
+social_media_agent = Agent(
     model='gemini-2.5-flash',
-    name='root_agent',
-    description='A social listening agent that summarizes trends and sentiments from Thai social media platforms.',
+    name='SocialMediaAgent',
+    description='Thai social listening agent that analyzes trends and sentiments from Facebook, YouTube, TikTok, Pantip, and X.',
     instruction='''You are a social listening agent specialized in analyzing Thai social media content. Your primary role is to gather and summarize information from Thai social media platforms to answer user questions about trends, sentiments, and discussions.
+
+**IMPORTANT - Structured Response Format:**
+When responding, structure your output to include the following elements (for integration with other agents):
+
+1. **Topics Array**: List key topics/themes being discussed
+   - For each topic: name, brief description, platforms where it's trending, example posts/mentions, approximate recency (e.g., "past 3 days")
+
+2. **Overall Sentiment**: 
+   - Sentiment label: positive/negative/mixed/neutral
+   - Confidence level: high/medium/low
+   - Key drivers: what's causing the sentiment (specific concerns, positive reactions, etc.)
+
+3. **Notes**: 
+   - Data limitations or gaps
+   - Warnings about data freshness
+   - Any important context about the sources
 
 **Data Sources Priority:**
 - Primary sources: Facebook, YouTube, TikTok, Pantip (https://pantip.com)
@@ -67,6 +83,16 @@ When providing summaries, structure your response as follows:
   - Provide sentiment breakdown with examples
 
 Remember: Always use google_search to gather current information. Never rely solely on your training data for social media trends, as they change rapidly. Prioritize recency and Thai audience relevance in all searches.
+
+**Output Format for Orchestrator Integration:**
+Structure your response clearly with sections for:
+- Topics (with platform and recency info)
+- Overall sentiment (with confidence and drivers)
+- Notes (limitations, freshness warnings)
+This helps other agents understand and use your insights effectively.
 ''',
     tools=[google_search],
 )
+
+# Keep root_agent for backward compatibility, but it's now an alias
+root_agent = social_media_agent

@@ -1,0 +1,23 @@
+creative_id,campaign_id,image_url,platform,format,status,approved_by,approved_at,tags,notes
+1,1,https://storage.googleapis.com/sample-campaigns/smart-home-1.jpg,facebook,static,approved,201,2024-01-01 08:00:00,"{smart_home,gen_z,bright_colors}",Main hero image showing smart home setup
+2,1,https://storage.googleapis.com/sample-campaigns/smart-home-2.jpg,facebook,carousel,approved,201,2024-01-01 08:15:00,"{smart_home,gen_z,lifestyle}",Carousel showing different smart devices
+3,1,https://storage.googleapis.com/sample-campaigns/smart-home-video.jpg,youtube,video_thumbnail,approved,201,2024-01-01 08:30:00,"{smart_home,millennials,how_to}",Video thumbnail for tutorial content
+4,2,https://storage.googleapis.com/sample-campaigns/summer-sale-1.jpg,facebook,static,approved,202,2024-06-01 09:00:00,"{summer,gen_z,bright_colors}",Summer sale banner with vibrant colors
+5,2,https://storage.googleapis.com/sample-campaigns/summer-sale-2.jpg,tiktok,static,approved,202,2024-06-01 09:15:00,"{summer,gen_z,playful}",TikTok-optimized summer sale creative
+6,3,https://storage.googleapis.com/sample-campaigns/retail-ai-1.jpg,facebook,static,approved,203,2024-03-01 10:00:00,"{ai,office_workers,corporate}",Professional AI retail solution image
+7,3,https://storage.googleapis.com/sample-campaigns/retail-ai-2.jpg,youtube,video_thumbnail,approved,203,2024-03-01 10:30:00,"{ai,office_workers,explainer}",Video thumbnail for AI explanation
+8,4,https://storage.googleapis.com/sample-campaigns/genz-test-1.jpg,facebook,static,rejected,201,2024-05-05 14:00:00,"{gen_z,dark_colors}",Rejected - too dark, doesn't match brand guidelines
+9,4,https://storage.googleapis.com/sample-campaigns/genz-test-2.jpg,tiktok,static,draft,NULL,NULL,"{gen_z,test}",Pending approval - new creative concept
+10,5,https://storage.googleapis.com/sample-campaigns/mid-year-1.jpg,facebook,static,approved,202,2024-07-01 08:00:00,"{millennials,premium}",Mid-year promotion creative
+11,5,https://storage.googleapis.com/sample-campaigns/mid-year-2.jpg,youtube,video_thumbnail,approved,202,2024-07-01 08:30:00,"{millennials,testimonial}",Video thumbnail with customer testimonial
+12,6,https://storage.googleapis.com/sample-campaigns/valentine-1.jpg,facebook,static,approved,201,2024-02-01 09:00:00,"{valentine,gen_z,romantic}",Valentine's Day themed creative
+13,6,https://storage.googleapis.com/sample-campaigns/valentine-2.jpg,tiktok,static,approved,201,2024-02-01 09:15:00,"{valentine,gen_z,fun}",TikTok-optimized Valentine creative
+14,7,https://storage.googleapis.com/sample-campaigns/enterprise-1.jpg,facebook,static,approved,203,2024-04-01 10:00:00,"{enterprise,office_workers,corporate}",Enterprise solution creative
+15,7,https://storage.googleapis.com/sample-campaigns/enterprise-2.jpg,youtube,video_thumbnail,approved,203,2024-04-01 10:30:00,"{enterprise,office_workers,case_study}",Case study video thumbnail
+16,8,https://storage.googleapis.com/sample-campaigns/back-to-school-1.jpg,facebook,static,approved,201,2024-08-01 08:00:00,"{back_to_school,gen_z,energetic}",Back to school campaign creative
+17,8,https://storage.googleapis.com/sample-campaigns/back-to-school-2.jpg,tiktok,static,approved,201,2024-08-01 08:15:00,"{back_to_school,gen_z,trendy}",TikTok back to school creative
+18,9,https://storage.googleapis.com/sample-campaigns/fall-1.jpg,facebook,static,approved,202,2024-09-01 09:00:00,"{fall,millennials,premium}",Fall collection launch creative
+19,9,https://storage.googleapis.com/sample-campaigns/fall-2.jpg,youtube,video_thumbnail,approved,202,2024-09-01 09:30:00,"{fall,millennials,lifestyle}",Lifestyle video thumbnail
+20,10,https://storage.googleapis.com/sample-campaigns/halloween-1.jpg,facebook,static,approved,201,2024-10-01 08:00:00,"{halloween,gen_z,playful}",Halloween campaign creative
+21,10,https://storage.googleapis.com/sample-campaigns/halloween-2.jpg,tiktok,static,approved,201,2024-10-01 08:15:00,"{halloween,gen_z,viral}",TikTok Halloween creative
+

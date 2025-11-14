@@ -1,0 +1,12 @@
+campaign_id,name,brand,objective,status,owner_id,created_at,updated_at,start_date,end_date,notes,brief_url
+1,Smart Home Launch,BrandX,awareness,completed,101,2023-12-15 10:00:00,2024-01-31 18:00:00,2024-01-01,2024-01-31,Launch campaign for new smart home product line targeting Gen Z and Millennials,https://docs.example.com/campaigns/smart-home-launch
+2,Summer Sale 2024,BrandY,conversions,completed,102,2024-05-20 09:00:00,2024-06-30 20:00:00,2024-06-01,2024-06-30,Summer promotion campaign with focus on Gen Z audience,https://docs.example.com/campaigns/summer-sale-2024
+3,New Retail AI,BrandZ,engagement,active,103,2024-02-25 14:00:00,2024-11-14 10:30:00,2024-03-01,2024-12-31,Long-running campaign promoting AI retail solutions for office workers,https://docs.example.com/campaigns/new-retail-ai
+4,Gen Z Test Campaign,BrandX,awareness,paused,101,2024-04-28 11:00:00,2024-05-15 16:00:00,2024-05-01,2024-05-31,Campaign paused due to low performance - needs creative refresh,https://docs.example.com/campaigns/gen-z-test
+5,Mid-Year Promotion,BrandY,conversions,active,102,2024-06-25 08:00:00,2024-11-14 09:15:00,2024-07-01,2024-07-31,Targeting Millennials with mid-year deals,https://docs.example.com/campaigns/mid-year-promo
+6,Valentine Special,BrandX,engagement,completed,101,2024-01-20 13:00:00,2024-02-28 19:00:00,2024-02-01,2024-02-28,Valentine's Day campaign for Gen Z audience,https://docs.example.com/campaigns/valentine-special
+7,Q2 Enterprise Push,BrandZ,conversions,active,103,2024-03-15 10:00:00,2024-11-14 11:00:00,2024-04-01,2024-06-30,Enterprise-focused campaign for office workers,https://docs.example.com/campaigns/q2-enterprise
+8,Back to School,BrandX,awareness,active,101,2024-07-20 09:00:00,2024-11-14 08:45:00,2024-08-01,2024-08-31,Back to school campaign targeting Gen Z students,https://docs.example.com/campaigns/back-to-school
+9,Fall Collection,BrandY,conversions,active,102,2024-08-25 12:00:00,2024-11-14 10:20:00,2024-09-01,2024-09-30,Fall fashion collection launch for Millennials,https://docs.example.com/campaigns/fall-collection
+10,Halloween Campaign,BrandX,engagement,active,101,2024-09-20 15:00:00,2024-11-14 09:00:00,2024-10-01,2024-10-31,Halloween-themed campaign for Gen Z audience,https://docs.example.com/campaigns/halloween
+

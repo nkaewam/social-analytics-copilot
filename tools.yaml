@@ -1,0 +1,48 @@
+# genai-toolbox configuration file
+# See: https://github.com/googleapis/genai-toolbox
+# Run: ./toolbox --tools-file tools.yaml
+
+sources:
+  # BigQuery source for campaign data
+  campaign-bigquery:
+    kind: bigquery
+    project: YOUR_PROJECT_ID  # Replace with your GCP project ID
+    location: us  # Or your preferred location (e.g., asia-southeast1 for Thailand)
+    # Optional: dataset filter for security
+    # dataset_filter: "campaign_analytics"
+
+  # Postgres source for operational/transactional data
+  campaign-postgres:
+    kind: postgres
+    host: ${POSTGRES_HOST:-127.0.0.1}
+    port: ${POSTGRES_PORT:-5432}
+    database: ${POSTGRES_DB:-campaign_db}
+    user: ${POSTGRES_USER:-toolbox_user}
+    password: ${POSTGRES_PASSWORD}  # Required: Set via environment variable
+
+tools:
+  # BigQuery SQL execution tool
+  bigquery-execute-sql:
+    kind: bigquery-execute-sql
+    source: campaign-bigquery
+    description: "Execute SQL queries against BigQuery analytics data. Available tables: campaign_metrics_daily (historical performance metrics). Use for analytics, trends, and historical performance analysis."
+    parameters:
+      - name: query
+        type: string
+        description: "The SQL query to execute against BigQuery. Query campaign_metrics_daily table for historical performance metrics, analytics, and trends."
+
+  # Postgres SQL tool for operational data
+  postgres-execute-sql:
+    kind: postgres-sql
+    source: campaign-postgres
+    description: "Execute SQL queries against Postgres operational campaign data. Available tables: campaigns, creatives, campaign_status. Use for current status, configurations, and operational lookups."
+    parameters:
+      - name: query
+        type: string
+        description: "The SQL query to execute against Postgres. Use for operational queries like campaign status, creative approvals, current configurations."
+
+toolsets:
+  campaign-analytics:
+    - bigquery-execute-sql
+    - postgres-execute-sql
+
