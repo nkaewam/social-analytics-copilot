@@ -9,4 +9,3 @@ campaign_id,is_active,budget_remaining,last_metrics_sync,alert_flags
 8,true,4500.00,2024-11-14 08:00:00,"{low_budget}"
 9,true,6800.50,2024-11-14 10:00:00,"{}"
 10,true,5200.00,2024-11-14 09:00:00,"{}"
-

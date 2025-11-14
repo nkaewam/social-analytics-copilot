@@ -2,6 +2,13 @@
 
 This directory contains sample CSV data files for loading into BigQuery and Postgres databases for POC testing.
 
+**Note**: These campaigns are representative of the types of work a Thai MarTech agency like [Adapter Digital](https://www.adapterdigital.com/works) would handle, including:
+- E-commerce platform launches
+- Performance marketing campaigns
+- MarTech/SaaS product promotions
+- Enterprise B2B campaigns
+- Social commerce campaigns
+
 ## Files
 
 ### BigQuery Data
@@ -14,13 +21,19 @@ This directory contains sample CSV data files for loading into BigQuery and Post
 ### Postgres Data
 
 - **`postgres_campaigns.csv`**: Campaign operational data
-  - 10 sample campaigns with various statuses (active, completed, paused)
+  - 10 sample campaigns representing typical MarTech agency work:
+    - E-commerce platform launches (ShopNow, LoveShop, StudyMart, SpookyShop)
+    - MarTech/SaaS campaigns (Adapter Digital Performance Suite, CDP Awareness, Enterprise Tools)
+    - Fashion/Retail campaigns (FashionHub, StyleBangkok)
+    - Various statuses: active, completed, paused
   - Includes campaign configurations, objectives, and metadata
   - Columns: campaign_id, name, brand, objective, status, owner_id, created_at, updated_at, start_date, end_date, notes, brief_url
 
 - **`postgres_creatives.csv`**: Creative metadata and approval status
   - 21 creatives across 10 campaigns
+  - Mix of platforms: Facebook, YouTube, TikTok, Instagram, LinkedIn
   - Includes approval status, tags, and platform information
+  - Reflects real-world creative types: hero images, carousels, video thumbnails, platform-specific formats
   - Columns: creative_id, campaign_id, image_url, platform, format, status, approved_by, approved_at, tags, notes
 
 - **`postgres_campaign_status.csv`**: Real-time campaign status
