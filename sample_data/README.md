@@ -2,7 +2,7 @@
 
 This directory contains sample CSV data files for loading into BigQuery and Postgres databases for POC testing.
 
-**Note**: These campaigns are representative of the types of work a Thai MarTech agency like [Adapter Digital](https://www.adapterdigital.com/works) would handle, including:
+**Note**: These campaigns are representative of the types of work a Thai MarTech agency would handle, including:
 - E-commerce platform launches
 - Performance marketing campaigns
 - MarTech/SaaS product promotions

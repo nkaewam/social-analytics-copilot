@@ -1,6 +1,6 @@
 # POC Demo Journeys
 
-This document outlines the flagship demo flows for the Adapter Insight Copilot POC, showing how the multi-agent system combines internal data, external social media insights, and creative analysis.
+This document outlines the flagship demo flows for the Insight Copilot POC, showing how the multi-agent system combines internal data, external social media insights, and creative analysis.
 
 ## Journey 1: Pre-launch Campaign Planning
 

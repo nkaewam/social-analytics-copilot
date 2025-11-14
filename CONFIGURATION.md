@@ -1,6 +1,6 @@
 # Configuration Guide
 
-This document explains how to configure and run the Adapter Insight Copilot multi-agent system.
+This document explains how to configure and run the Insight Copilot multi-agent system.
 
 ## Prerequisites
 

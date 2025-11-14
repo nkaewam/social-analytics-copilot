@@ -9,7 +9,7 @@ Build a **dual‑lens insight assistant**:
 
 ## 1. Overall POC story you can pitch
 
-**“Adapter Insight Copilot”** that can answer questions like:
+**“Insight Copilot”** that can answer questions like:
 
 - “For our last 3 FMCG campaigns, which messages performed best internally, and how does that align with what’s trending on Thai social media right now?”
 - “We’re planning a new campaign about sustainable living. What’s the current sentiment in Thailand on this topic, and based on our past campaigns, what performance can we expect?”

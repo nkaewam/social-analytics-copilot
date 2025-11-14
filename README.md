@@ -1,4 +1,4 @@
-# Adapter Insight Copilot
+# Insight Copilot
 
 A multi-agent AI system that combines internal campaign data, external Thai social media insights, and creative analysis to provide comprehensive marketing campaign intelligence.
 

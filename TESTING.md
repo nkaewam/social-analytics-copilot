@@ -1,6 +1,6 @@
 # Testing and Evaluation Guide
 
-This document outlines how to test and evaluate the Adapter Insight Copilot POC.
+This document outlines how to test and evaluate the Insight Copilot POC.
 
 ## Test Dataset Setup
 
